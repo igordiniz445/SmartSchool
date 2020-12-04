@@ -1,10 +1,11 @@
 using System.Collections.Generic;
+using SmartSchool.API.Data;
 
 namespace SmartSchool.API.Models
 {
     public class Aluno
     {
-        public Aluno() { }
+        public Aluno(SmartContext context) { }
         public Aluno(int id, string nome, string sobrenome, string telefone)
         {
             this.Id = id;
@@ -17,6 +18,6 @@ namespace SmartSchool.API.Models
         public string Sobrenome { get; set; }
         public string Telefone { get; set; }
 
-        public IEnumerable<AlunoDIsciplina> AlunosDisciplinas { get; set; }
+        public IEnumerable<AlunoDisciplina> AlunosDisciplinas { get; set; }
     }
 }

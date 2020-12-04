@@ -1,10 +1,10 @@
 namespace SmartSchool.API.Models
 {
-    public class AlunoDIsciplina
+    public class AlunoDisciplina
     {
-        public AlunoDIsciplina() { }
+        public AlunoDisciplina() { }
 
-        public AlunoDIsciplina(int alunoId, int disciplinaId)
+        public AlunoDisciplina(int alunoId, int disciplinaId)
         {
             this.AlunoId = alunoId;
             this.DisciplinaId = disciplinaId;
